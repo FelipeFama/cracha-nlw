@@ -1,0 +1,14 @@
+:root {
+  --background-page: #fafafa;
+  --background-card: #d2d3db;
+  --background-icons: #9f9fa0;
+  --font-color: #09090a;
+  --font-hover: #e0e0e5;
+  --light-gray: #e0e0e5;
+  --dark-gray: #323238;
+  --background-badge: linear-gradient(
+    161.24deg,
+    #3b9dd5 -15.25%,
+    #1e5dff 111.89%
+  );
+}

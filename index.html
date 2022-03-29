@@ -1,59 +1,115 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Felipe Fama doWhile 2021</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main>
-      <div class="container">
-        <div class="avatar">
-          <span>
-            <img src="./images/selo.svg" alt="selo" />
-          </span>
 
-          <img src="/images/felipe.jpg" alt="perfil" id="userImage" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felipe Fama doWhile 2021</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/colors.css">
 
-        <h1 id="userName">Felipe</h1>
-        <a id="userLink" href="https://github.com/felipefama" target="blank">
-          <img src="./images/github 2.svg" alt="icone do github" />
-          <span id="userLogin">FelipeFama</span></a
-        >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
 
-        <p id="userBio">Estudando a arte de programar.</p>
+<body>
+  <main>
 
-        <ul id="socialLinks">
-          <li class="youtube">
-            <a href="https//youtube.com/lipehfama" target="_blank">
-              <img src="./images/youtube.svg" alt="icone do youtube" />
-            </a>
-          </li>
-          <li class="facebook">
-            <a href="https://www.facebook.com/lipeh.fama/" target="_blank">
-              <img src="./images/facebook.svg" alt="icone do facebook"
-            /></a>
-          </li>
-          <li class="instagram">
-            <a href="https://www.instagram.com/lipeh.mesquita/" target="_blank">
-              <img src="./images/instagram.svg" alt="icone do instagram"
-            /></a>
-          </li>
-          <li class="twiter">
-            <a href="https//twiter.com/lipehfama" target="_blank">
-              <img src="./images/twiter.svg" alt="icone do twiter"
-            /></a>
-          </li>
-        </ul>
+    <button class="option-search" id="option-search" title="Opções de pesquisa">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <span class="badge-rope"></span>
+    <span class="badge-gap"></span>
+
+    <div class="container">
+      <div class="gradient-pentagon">
+        <img src="./images/Vector.svg" alt="triângulo baixo">
       </div>
-    </main>
 
-    <script src="main.js"></script>
-  </body>
+      <div class="avatar">
+        <span class="rotate">
+          <img src="./images/selo.svg" alt="Selo Rocketseat" />
+        </span>
+
+        <img src="/images/felipe.jpg" alt="perfil" id="userImage" />
+      </div>
+
+      <h1 id="userName">Felipe</h1>
+      <a id="userLink" href="https://github.com/felipefama" target="blank" class="github-usr">
+        <img src="./images/github 2.svg" alt="icone do github" />
+        <span id="userLogin">FelipeFama</span></a>
+
+      <p id="userBio"></p>
+
+      <ul id="socialLinks">
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/felipe-fama-595ab7195/" target="_blank">
+            <span class="icon-link">
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+        </li>
+
+        <li class="facebook">
+          <a href="https://www.facebook.com/lipeh.fama/" target="_blank">
+            <span class="icon-link">
+              <i class="fab fa-facebook"></i>
+            </span>
+          </a>
+        </li>
+
+        <li class="instagram">
+          <a href="https://www.instagram.com/lipeh.mesquita/" target="_blank">
+            <span class="icon-link">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+        </li>
+
+        <li class="twiter">
+          <a href="https//twiter.com/lipehfama" target="_blank">
+            <span class="icon-link">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+  <div class="search-box" id="option-box">
+    <article class="option-box">
+      <button id="close-box" class="close-box-button">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <h3 class="options-title">Procurar perfil</h3>
+
+      <div class="option-item">
+        <span>
+          <i class="fab fa-github"></i>
+          GitHub:
+        </span>
+
+        <div class="search-container">
+          <input type="text" class="text-input" id="github-nick-input" />
+          <button class="search-button" id="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script src="https://kit.fontawesome.com/d18ce1bc58.js" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+
+</body>
+
 </html>
