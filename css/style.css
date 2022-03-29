@@ -19,6 +19,10 @@ main,
   justify-content: center;
 }
 
+body {
+  background: var(--background-body);
+}
+
 a,
 h1,
 ul,
@@ -51,7 +55,6 @@ main {
 }
 
 .option-search:hover {
-  background-color: var(--background-card);
   color: var(--dark-gray);
 }
 
@@ -109,6 +112,19 @@ main {
   z-index: 1;
 }
 
+.rotate {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .avatar > img {
   width: 10rem;
   height: 11.5rem;
@@ -160,38 +176,19 @@ main {
   width: 100%;
   margin-top: 1rem;
   padding: 10px;
-  border-radius: 10px;
   display: inline-flex;
   align-items: center;
 }
 
-.options-title {
-  text-decoration: underline 1px var(--font-color);
-}
-
-.select-input,
-.text-input,
-.check-input {
-  outline: none;
+.text-input {
+  background-color: var(--font-color);
+  border-radius: 10px;
   border: none;
   color: var(--background-card);
-  background-color: var(--font-color);
+  outline: none;
   padding: 5px;
-  border-radius: 10px;
   margin-left: 10px;
-  border: solid 1px var(--background-card);
-}
-
-.text-input {
   width: 100%;
-  padding-right: 30px;
-  background-color: var(--font-color);
-}
-
-.check-input {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
 }
 
 .search-container {
@@ -207,8 +204,7 @@ main {
   color: var(--background-card);
 }
 
-.options-button,
-.close-modal-button {
+.close-box-button {
   position: absolute;
   z-index: 3;
   top: 0;
@@ -219,8 +215,7 @@ main {
 }
 
 .search-button,
-.options-button,
-.close-modal-button {
+.close-box-button {
   background: none;
   border: none;
   cursor: pointer;
@@ -230,27 +225,7 @@ main {
   display: grid;
 }
 
-.text-input:focus,
-.select-input:focus {
-  border-color: var(--yellow);
-}
-
-.github-usr:hover,
-.button:hover,
 .search-button:hover,
-.close-modal-button:hover {
+.close-box-button:hover {
   color: var(--font-hover);
-}
-
-.rotate {
-  animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }

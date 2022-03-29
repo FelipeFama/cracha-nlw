@@ -11,4 +11,9 @@
     #3b9dd5 -15.25%,
     #1e5dff 111.89%
   );
+  --background-body: linear-gradient(
+    104.3deg,
+    hsl(0, 77%, 45%) 0.48%,
+    #ffcd1e 100%
+  );
 }
